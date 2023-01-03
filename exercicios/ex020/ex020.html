@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação em CSS</title>
+    <style>
+        .fundo{
+            background-color: yellow;
+        }
+        div{
+            display: inline-block;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+        #marrom{
+            background-color: #8b0000;
+        }
+        #verde{
+            background-color: #556b2f ;
+        }
+        #azulclaro{
+            background-color: #d3d3d3;
+        }
+        .azul{
+            background-color: #00008b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Identificadores em CSS</h1>
+    <p>No exercício anterior, vimos as <span class="fundo">classes</span> e entendemos que vários elementos podem ter uma mesma classe. Mas se quisermos <span class="fundo">identificar</span> os elementos, dando um "nome" específico para cada um, podemos usar os IDs. Em um mesmo documento, <b>não podemos ter dois elementos com o mesmo ID!</b></p>
+    <div id="marrom"></div>
+    <div id="verde"></div>
+    <div class="azul"></div>
+    <div id="azulclaro"></div>
+    <div class="azul"></div>
+</body>
+</html>

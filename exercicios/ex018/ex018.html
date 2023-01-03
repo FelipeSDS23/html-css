@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&display=swap');
+        @font-face {
+            font-family: bird;
+            src: url(fonts/LittleBird.ttf);
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif; font-size: 40px;
+        }
+        #padrao{
+            font-family: Arial, Helvetica, sans-serif; font-size: 30px;
+        }
+        #google{
+            font-family: 'Pacifico', cursive; font-size: 30px;
+        }
+        #local{
+            font-family: 'bird'; font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes em CSS</h1>
+    <P id="padrao">Podemos configurar fontes padrão do sistema</P>
+    <P id="google">Ou então usar uma fonte do Google Fonts</P>
+    <P id="local">Ou ainda usar um arquivo local de fontes</P>
+</body>
+</html>
