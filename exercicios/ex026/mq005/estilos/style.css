@@ -30,7 +30,7 @@ menu > ul > li > a{
     color: white;
     border-top: 2px solid gray;
 }
-menu > ul > li > a:hove{
+menu > ul > li > a:hover{
     background-color: gray;
 }
 main{
