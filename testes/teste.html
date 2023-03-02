@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 1</title>
+</head>
+<body>
+    <p id="p1">Paragrafo 1</p>
+    <p name="p2">Paragrafo 2</p>
+    <p class="p3">Paragrafo 3</p>
+    <p id="p4">Paragrafo 4</p>
+    <script>
+        /*Por marca (por tag)*/
+        var paragrafo = window.document.getElementsByTagName('p')[0].innerText
+        window.document.write('Os conteúdos dos parágrafos são: ' + paragrafo)
+        /*Por id*/
+        var paragrafo = window.document.getElementById('p1').innerText
+        window.document.write('Os conteúdos dos parágrafos são: ' + paragrafo)
+        /*Por name*/
+        var paragrafo = window.document.getElementsByName('p2')[0].innerText
+        window.document.write('Os conteúdos dos parágrafos são: ' + paragrafo)
+        /*Por classe*/
+        var paragrafo = window.document.getElementsByClassName('p3')[0].innerText
+        window.document.write('Os conteúdos dos parágrafos são: ' + paragrafo)
+        /*Por seletor (Como no CSS)*/
+        var paragrafo = window.document.querySelector('p#p4').innerText
+        window.document.write('Os conteúdos dos parágrafos são: ' + paragrafo)
+    </script>
+</body>
+</html>
