@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 
 .white-bg {
