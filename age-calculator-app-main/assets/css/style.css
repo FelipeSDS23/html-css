@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+    /*Primary*/
+    --Purple: #854dff;
+    --Light-red: #ff5757;
+
+    /*Neutral*/
+    --White: #ffffff;
+    --Off-white: #f0f0f0;
+    --Light-grey: #dbdbdb;
+    --Smokey-grey: #716f6f;
+    --Off-black: #141414;
+
+    /*Font*/
+    --Poppins: 'Poppins', sans-serif;
+    /*Weights: 400i, 700, 800i*/
+    /*- Font size (inputs): 32px*/
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.screen {
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-grey);
+}
+
+.container {
+    height: 500px;
+    width: 700px;
+    border-radius: 25px 25px 30% 25px;
+    padding: 50px;
+    background-color: var(--White);
+    position: relative;
+    box-shadow: 5px 5px 20px #00000025;
+}
+
+.inputs {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--Light-grey);
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--Poppins);
+    font-weight: 700;
+    color: var(--Smokey-grey);
+    margin-left: 10px;
+}
+
+.date>p {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.date>input {
+    width: 130px;
+    height: 60px;
+    margin: 10px 30px 10px 0px;
+    padding: 15px;
+    font-size: 32px;
+    font-weight: 700;
+    border: 2px solid var(--Light-grey);
+    border-radius: 10px;
+    color: var(--Off-black);
+    outline: none;
+}
+
+.date>input:hover {
+    border-color: var(--Purple);
+    cursor: pointer;
+}
+
+.image {
+    position: absolute;
+    right: 50px;
+    top: 140px;
+    background-color: var(--Purple);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.image:hover {
+    background-color: var(--Off-black);
+    cursor: pointer;
+}
+
+.result {
+    font-size: 4em;
+    font-family: Poppins;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.result>span.num {
+    color: var(--Purple);
+}
+
+.attribution {
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 550px;
+        width: 90vw;
+        padding: 40px 20px;
+    }
+
+    .inputs {
+        margin: 10px 0px;
+        padding-bottom: 45px;
+    }
+
+    .date {
+        margin-left: 0px;
+    }
+
+    .date>input {
+        width: 90px;
+        height: 60px;
+        font-size: 22px;
+        margin: 15px 15px 15px 0px;
+    }
+
+    .date>p {
+        font-size: .6em;
+        height: 16px;
+    }
+
+    .image {
+        right: 40%;
+        top: 200px;
+        width: 60px;
+        height: 60px;
+        padding: 14px;
+    }
+
+    .image>img {
+        width: 30px;
+    }
+
+    .display {
+        margin-top: 30px;
+    }
+
+    .result {
+        font-size: 3em;
+        padding-top: 10px;
+    }
+
+    .attribution {
+        width: 100vw;
+    }
+}

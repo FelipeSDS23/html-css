@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <main class="screen">
+    <div class="container">
+      <div class="inputs">
+        <div class="date" id="dateField">
+          <span>Day</span>
+          <input type="text" name="day-input" id="day-input" placeholder="DD" maxlength="2">
+          <p id="dateError"></p>
+        </div>
+        <div class="date" id="monthField">
+          <span>Month</span>
+          <input type="text" name="month-input" id="month-input" placeholder="MM" maxlength="2">
+          <p id="monthError"></p>
+        </div>
+        <div class="date" id="yearField">
+          <span>Year</span>
+          <input type="text" name="year-input" id="year-input" placeholder="YYYY" maxlength="4">
+          <p id="yearError"></p>
+        </div>
+      </div>
+      <div class="image">
+        <img src="assets/images/icon-arrow.svg" alt="Submit arrow">
+      </div>
+      <div class="display">
+        <p class="result"><span class="num" id="years-result">--</span> years</p>
+        <p class="result"><span class="num" id="months-result">--</span> months</p>
+        <p class="result"><span class="num" id="days-result">--</span> days</p>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/felipe-santos-7296b8213/" target="_blank">Felipe Silva</a>.
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
