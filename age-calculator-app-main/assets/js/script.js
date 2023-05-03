@@ -20,7 +20,6 @@ function begin() {
     let month = Number(monthInput.value);
     let year = Number(yearInput.value);
 
-
     validateUnfilledFields(day, month, year);
     //The if below controls the display of invalid data on the screen
     if (!day || !month || !year) {
@@ -42,7 +41,6 @@ function begin() {
     calculateAge(day, month, year);
 }
 
-
 function calculateAge(day, month, year) {
     //Creates a date based on parameters
     let final = new Date(year, month - 1, day);
@@ -56,7 +54,6 @@ function calculateAge(day, month, year) {
     monthsResult.innerHTML = final.getMonth();
     daysResult.innerHTML = final.getDate();
 }
-
 
 function validateUnfilledFields(day, month, year) {
     //If the value of the variable "day", is empty, the test "!day" will return true and execute its respective block
@@ -90,7 +87,6 @@ function validateUnfilledFields(day, month, year) {
     }
 }
 
-
 function validateInvalidDates(day, month, year) {
     //Make sure the day is in the correct format
     if ((month === 4 || month === 6 || month === 9 || month === 11) && day > 30) {
@@ -121,7 +117,6 @@ function validateInvalidDates(day, month, year) {
     }
 }
 
-
 //The three functions below define the style settings of the fields when an error occurs
 function dateErrorStyle() {
     dateField.style.color = '#ff5757';
@@ -135,7 +130,6 @@ function yearErrorStyle() {
     yearField.style.color = '#ff5757';
     yearInput.style.borderColor = '#ff5757';
 }
-
 
 //The three functions below define the default style settings for fields.
 function dateStandardStyle() {
