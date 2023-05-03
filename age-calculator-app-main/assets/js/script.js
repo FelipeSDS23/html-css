@@ -1,22 +1,17 @@
-let today = new Date();
-
-let dateField = document.querySelector('#dateField');
-let monthField = document.querySelector('#monthField');
-let yearField = document.querySelector('#yearField');
-
-let dateError = document.querySelector('#dateError');
-let monthError = document.querySelector('#monthError');
-let yearError = document.querySelector('#yearError');
-
-let dayInput = document.querySelector('#day-input');
-let monthInput = document.querySelector('#month-input');
-let yearInput = document.querySelector('#year-input');
-
-let submit = document.querySelector('.image');
-
-let yearsResult = document.querySelector('#years-result');
-let monthsResult = document.querySelector('#months-result');
-let daysResult = document.querySelector('#days-result');
+const today = new Date();
+const dateField = document.querySelector('#dateField');
+const monthField = document.querySelector('#monthField');
+const yearField = document.querySelector('#yearField');
+const dateError = document.querySelector('#dateError');
+const monthError = document.querySelector('#monthError');
+const yearError = document.querySelector('#yearError');
+const dayInput = document.querySelector('#day-input');
+const monthInput = document.querySelector('#month-input');
+const yearInput = document.querySelector('#year-input');
+const submit = document.querySelector('.image');
+const yearsResult = document.querySelector('#years-result');
+const monthsResult = document.querySelector('#months-result');
+const daysResult = document.querySelector('#days-result');
 
 submit.addEventListener('click', begin);
 
